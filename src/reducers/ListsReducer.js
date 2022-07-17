@@ -1,3 +1,8 @@
+import { CONSTANTS } from "../actions";
+
+let listID = 2;
+let cardID = 4;
+
 const initialState = [
   {
     id: 0,
@@ -34,9 +39,43 @@ const initialState = [
 ];
 
 const ListsReducer = (state = initialState, action) => {
-    switch(action.type) {
-        default:
-            return state;
+
+    switch (action.type) {
+      
+      // add a new list ----------------------------------------------------------------------------------->
+      case CONSTANTS.ADD_LIST: {
+        const newList = {
+          id: listID,
+          title: action.payload,
+          cards: [],
+        };
+        listID += 1;
+        state.push(newList);
+        return [...state];
+      }
+
+      // add a new card ----------------------------------------------------------------------------------->
+      case CONSTANTS.ADD_CARD: {
+        const newCard = {
+          id: cardID,
+          text: action.payload.text,
+        };
+        cardID += 1;
+        const newState = state.map((list) => {
+          console.log("target list found");
+          if (list.id === action.payload.listID) {
+            list.cards.push(newCard);
+            return list;
+          } else {
+            return list;
+          }
+        });
+        return [...newState];
+      }
+
+      // simple render ------------------------------------------------------------------------------------->
+      default:
+        return state;
     }
 };
 
