@@ -11,12 +11,12 @@ const ListContainer = styled.div`
   width: 300px;
   padding: 8px;
   margin-right: 8px;
-  height: 100%;
 `;
 
 const TrelloList = ({ title, cards, listID }) => {
   return (
-    <Droppable droppableId={String(listID)}>
+    <div>
+      <Droppable droppableId={String(listID)}>
       {(provided) => (
         <ListContainer
           {...provided.droppableProps}
@@ -36,6 +36,8 @@ const TrelloList = ({ title, cards, listID }) => {
         </ListContainer>
       )}
     </Droppable>
+    </div>
+    
   );
 };
 
