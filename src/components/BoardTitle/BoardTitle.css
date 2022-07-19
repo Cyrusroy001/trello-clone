@@ -1,0 +1,76 @@
+.title-div {
+    display: flex;
+    align-items: center;
+    padding: 4px 0 8px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.star-wrapper {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    background-color: hsla(0, 0%, 100%, .3);
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 4px 4px;
+    font-size: 18px;
+}
+
+.star-wrapper:hover {
+    font-size: 22px;
+    color: rgb(255, 204, 109);
+}
+
+.horizontal-separator {
+    width: 1px;
+    height: 16px;
+    background-color: hsla(0, 0%, 100%, .3);
+    margin: 8px;
+}
+
+.button-wrapper {
+    width: max-content;
+    color: #fff;
+    background-color: hsla(0, 0%, 100%, .3);
+    padding: 0 12px;
+    height: 32px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-wrapper:hover {
+    background-color: hsla(0, 0%, 100%, .4)
+}
+
+.earth-image {
+    width: 16px;
+    height: 16px;
+}
+
+.button-label {
+    font-size: 14px;
+}
+
+.user-avatar {
+    color: #172b4d;
+    background-color: #dfe1e6;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-left: 4px;
+}

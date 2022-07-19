@@ -6,6 +6,9 @@ import styled from "styled-components";
 
 import TrelloList from "./TrelloList/TrelloList";
 import TrelloActionButton from "./TrelloActionButton/TrelloActionButton";
+import BoardTitle from "./BoardTitle/BoardTitle";
+import NotificationBar from "./NotificationBar/NotificationBar";
+import Header from "./Header/Header";
 
 const ListContainer = styled.div`
   display: flex;
@@ -39,7 +42,9 @@ class App extends Component {
     return (
       <DragDropContext onDragEnd={this.onDragEndHandler}>
         <div className="App">
-          <h2>Trello-Clone</h2>
+          <Header />
+          <NotificationBar />
+          <BoardTitle />
           <ListContainer>
             {lists.map((list) => (
               <TrelloList

@@ -1,38 +1,62 @@
 import { CONSTANTS } from "../actions";
 
-let listID = 2;
-let cardID = 5;
+let listID = 4;
+let cardID = 8;
 
 const initialState = [
   {
     id: `list-${0}`,
-    title: "Last Episode",
+    title: "To Do",
     cards: [
       {
         id: `card-${0}`,
-        text: "we created a static list and a static card",
+        text: "Helpdesk Call AA999",
       },
       {
         id: `card-${1}`,
-        text: "we used a mix between material UI React and styled components",
+        text: "Helpdesk Call BB999",
       },
     ],
   },
   {
     id: `list-${1}`,
-    title: "This Episode",
+    title: "Development",
     cards: [
       {
         id: `card-${2}`,
-        text: "we will create our first reducer",
+        text: "Helpdesk Call CC999",
       },
       {
         id: `card-${3}`,
-        text: "and render many cards on our list with static data",
+        text: "Helpdesk Call DD999",
       },
       {
         id: `card-${4}`,
-        text: "link tags for roboto font and material icons",
+        text: "Helpdesk Call EE999",
+      },
+    ],
+  },
+  {
+    id: `list-${2}`,
+    title: "Testing",
+    cards: [
+      {
+        id: `card-${5}`,
+        text: "Helpdesk Call FF999",
+      },
+      {
+        id: `card-${6}`,
+        text: "Helpdesk Call GG999",
+      },
+    ],
+  },
+  {
+    id: `list-${3}`,
+    title: "Done",
+    cards: [
+      {
+        id: `card-${7}`,
+        text: "Helpdesk Call HH999",
       },
     ],
   },
