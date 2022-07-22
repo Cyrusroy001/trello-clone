@@ -9,6 +9,7 @@ import TrelloActionButton from "./TrelloActionButton/TrelloActionButton";
 import BoardTitle from "./BoardTitle/BoardTitle";
 import NotificationBar from "./NotificationBar/NotificationBar";
 import Header from "./Header/Header";
+import SideBar from "./SideBar/SideBar";
 
 const ListContainer = styled.div`
   display: flex;
@@ -43,19 +44,22 @@ class App extends Component {
       <DragDropContext onDragEnd={this.onDragEndHandler}>
         <div className="App">
           <Header />
+          <SideBar />
           <NotificationBar />
           <BoardTitle />
-          <ListContainer>
-            {lists.map((list) => (
-              <TrelloList
-                listID={list.id}
-                key={list.id}
-                title={list.title}
-                cards={list.cards}
-              />
-            ))}
-            <TrelloActionButton list />
-          </ListContainer>
+          <div style={{marginLeft: "40px"}}>
+            <ListContainer>
+              {lists.map((list) => (
+                <TrelloList
+                  listID={list.id}
+                  key={list.id}
+                  title={list.title}
+                  cards={list.cards}
+                />
+              ))}
+              <TrelloActionButton list />
+            </ListContainer>
+          </div>
         </div>
       </DragDropContext>
     );

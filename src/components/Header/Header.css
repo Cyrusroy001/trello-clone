@@ -13,6 +13,14 @@
     justify-content: space-between;
 }
 
+.top-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
 .top-left-menu {
     display: inline-flex;
     align-items: center;

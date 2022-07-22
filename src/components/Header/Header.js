@@ -7,7 +7,7 @@ const Header = () => {
       <div className="top-left-menu">
         <button className="button-wrapper">
           <img
-            className="button-icon"
+            className="button-icon top-icon"
             src="https://trello-replica.web.app/static/media/apps_white.2aa687f0.svg"
             alt=""
           ></img>

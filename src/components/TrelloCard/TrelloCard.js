@@ -23,7 +23,7 @@ const TrelloCard = ({ text, id, index }) => {
                 backgroundColor: "blue",
                 width: 40,
                 height: 8,
-                marginBottom: 8,
+                marginBottom: 6,
                 borderRadius: 4,
               }}></div>
               <Typography sx={{ fontSize: 14 }} color="#172b4d">
