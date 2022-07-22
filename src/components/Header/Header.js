@@ -5,12 +5,8 @@ const Header = () => {
   return (
     <div className="header">
       <div className="top-left-menu">
-        <button className="button-wrapper">
-          <img
-            className="button-icon top-icon"
-            src="https://trello-replica.web.app/static/media/apps_white.2aa687f0.svg"
-            alt=""
-          ></img>
+        <button className="button-wrapper-intersect">
+          <span class="material-icons">apps</span>
         </button>
         <div className="menu-item">
           <div className="logo"></div>
@@ -40,19 +36,11 @@ const Header = () => {
           <input className="search-input" type="search" placeholder="Search" />
           <span class="material-icons">search</span>
         </div>
-        <div className="button-wrapper button-right">
-          <img
-            src="https://trello-replica.web.app/static/media/info.23e92631.png"
-            alt=""
-            className="button-icon"
-          ></img>
+        <div className="button-wrapper-header">
+          <span class="material-icons">info</span>
         </div>
-        <div className="button-wrapper button-right">
-          <img
-            src="https://trello-replica.web.app/static/media/notification.c7957132.png"
-            alt=""
-            className="button-icon"
-          ></img>
+        <div className="button-wrapper-header">
+          <span class="material-icons">notifications</span>
         </div>
         <span className="user-avatar">QK</span>
       </div>

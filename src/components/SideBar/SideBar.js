@@ -4,15 +4,15 @@ import "./SideBar.css";
 const SideBar = () => {
   return (
     <nav className="sidebar">
-      <button className="button-wrapper white-button">
-        <img
-          alt=""
-          src="https://trello-replica.web.app/static/media/user-blue.022f390c.png"
-          className="button-icon2"
-        ></img>
+      <button className="button-wrapper-side white-button">
+        <div className="person-icon">
+          <span class="material-icons">person</span>
+        </div>
       </button>
-      <button className="button-wrapper transparent-button">
-        <span class="material-icons side-material">keyboard_double_arrow_right</span>
+      <button className="button-wrapper-side">
+        <span class="material-icons">
+          keyboard_double_arrow_right
+        </span>
       </button>
     </nav>
   );

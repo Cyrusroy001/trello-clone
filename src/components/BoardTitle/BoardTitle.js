@@ -11,12 +11,8 @@ const BoardTitle = () => {
         </span>
       </div>
       <div className="horizontal-separator"></div>
-      <div className="button-wrapper">
-        <img
-          className="earth-image"
-          src="https://trello-replica.web.app/static/media/earth_white.b0d834ac.svg"
-          alt=""
-        ></img>
+      <div className="button-wrapper-public">
+        <span class="material-icons">public</span>
         <span className="button-label">Public</span>
       </div>
       <div className="horizontal-separator"></div>

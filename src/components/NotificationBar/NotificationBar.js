@@ -5,11 +5,10 @@ const NotificationBar = () => {
   return (
     <div className="bar">
       <div className="content">
-        <img
-          className="earth-icon"
-          src="https://trello-replica.web.app/static/media/earth_green.f5dba22e.svg"
-          alt=""
-        ></img>
+        <div className="error-icon">
+          <span class="material-icons">error</span>
+        </div>
+
         <div className="message">
           This board is set to public. Board admins can change its visibility
           setting at any time.

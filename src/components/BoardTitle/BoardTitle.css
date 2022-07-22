@@ -38,7 +38,7 @@
     margin: 8px;
 }
 
-.button-wrapper {
+.button-wrapper-public {
     width: max-content;
     color: #fff;
     background-color: hsla(0, 0%, 100%, .3);
@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-.button-wrapper:hover {
+.button-wrapper-public:hover {
     background-color: hsla(0, 0%, 100%, .4)
 }
 

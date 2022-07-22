@@ -40,6 +40,19 @@
     color: #fff;
 }
 
+.button-wrapper-intersect {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
 .button-icon {
     width: 20px;
     height: 20px;
@@ -140,7 +153,7 @@
     margin-left: 4px;
 }
 
-.button-wrapper-right {
+.button-wrapper-header {
     width: 32px;
     height: 32px;
     background-color: transparent;
@@ -155,5 +168,7 @@
 
 .button-right {
     width: 15px;
+    right: 7px;
+    position: relative;
 }
 

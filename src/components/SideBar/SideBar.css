@@ -22,7 +22,7 @@
     background-image: none;
 }
 
-.button-wrapper2 {
+.button-wrapper-side {
     width: 32px;
     height: 32px;
     background-color: transparent;
@@ -35,7 +35,7 @@
     color: #fff;
 }
 
-.button-wrapper2:hover {
+.button-wrapper-side:hover {
     background-color: white
 }
 
@@ -57,4 +57,13 @@
     position: relative;
     top: 6px;
     right: 7px;
+}
+
+.person-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+    color: #0179be;
 }
