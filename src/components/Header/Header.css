@@ -35,9 +35,9 @@
 .button-icon {
     width: 20px;
     height: 20px;
-    position: relative;
+    /* position: relative; */
     top: 2px;
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 .menu-item {
@@ -66,5 +66,86 @@
 .arrow-down {
     width: 10px;
     margin-left: 6px;
+}
+
+.dark-button {
+    width: max-content;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, .24);
+    padding: 0 12px;
+    margin-left: 12px;
+}
+
+.button-label {
+    font-size: 14px;
+}
+
+/* ------------------------> */
+
+.top-right-menu {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-bar-wrapper {
+    position: relative;
+    margin-right: 8px;
+}
+
+.search-input {
+    width: 250px;
+    height: 32px;
+    border: 1px solid hsla(0, 0%, 100%, .25);
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 100%, .3);
+    color: hsla(0, 0%, 100%, .5);
+    padding-left: 30px;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.search-bar-wrapper span {
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.user-avatar {
+    color: #172b4d;
+    background-color: #dfe1e6;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+.button-wrapper-right {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.button-right {
+    width: 15px;
 }
 
